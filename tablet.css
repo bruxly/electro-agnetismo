@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 0;
+    
+}
+
+
+/*...................section header .................*/
+
+
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 405px;
+    text-align: center;
+  
+    background-color: #cccccc;
+}
+    
+
+
+.header--title-container {
+    
+    
+    display: flex;
+    width: 940px;
+    margin: 52px 60px 20px 0px;
+    justify-content: space-between;
+}
+
+
+
+
+/*logo header*/
+.header--title-container img{
+   
+    width: 280;
+    height: 216px;
+   
+   
+}
+
+
+
+
+/*barras de navegacion*/
+nav{
+    margin: 25px;
+    
+}
+
+nav ul li{
+    margin-bottom: 50px;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+   
+}
+
+
+
+
+/*..................................electromagnetismo y fisica.................*/
+
+.header--title-container h2{
+    
+    font-size: 1.5rem;
+    margin-top: 60px;
+    font-weight: bold;
+    width: 320px;
+    height: 173px;
+    padding: 4px;
+  
+}  
+
+
+.bloque-Bienvenida{
+    padding: 15px 0 0 0;
+    max-width: 940px;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.bloque-Bienvenida h2 {
+    color: red;
+    
+}
+
+.header--title-container p{
+    
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 400;  
+}
+
+/*..................................contenedor de informacion informe..........*/
+
+main{
+    background: #fefefe;
+    margin-bottom: 0;
+}
+
+
+
+/*titulo de bienvenida*/
+.titulo-principal {
+    max-width: 940px;
+    text-align: center;
+    background: #fefefe;
+    font-size: 2em;
+    margin: 0 0 1rem;
+    clear: left;/*organiza el texto que acompaña a logo_tijeras*/
+}
+
+
+
+/*parrafos del saludo*/
+.bloque-Bienvenida p{
+    max-width: 940px;
+    margin: 0 0 1rem;
+    font-size: 1.5em;
+    background: #fefefe;
+
+}
+
+
+
+.bloque-Bienvenida h1{
+    width: 60%;
+    /*float: left;*/
+    margin: 0 -157px 20px 0;
+    max-width: 940px;
+}
+
+
+/**...............................contenedor de las fotos...............*/
+.main{
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+
+
+
+.container-fotos{
+    width: 940px;
+    margin: auto;
+    padding: 50px;/*ditancia del footer*/
+    
+   
+}
+
+.fotos .foto-brusly{
+    width: 230px;
+   
+    
+}
+
+.fotos .foto-juanchis{
+    width: 250px;
+   
+    
+}
+
+/*caja de las fotos*/
+.container-fotos li {
+   
+    display: inline-block;
+    text-align: center;/*centro las fotos*/
+    width: 30%;/*cada elemento ocupa el 30%*/
+    vertical-align: top;/*los items se alinean en vertical*/
+    /*background: rgb(21, 21, 255);/*color de fondo de las tarjetas donde estan las fotos*/
+    /*margin: 0 2.3%;*/
+    padding: 30px 20px;/*se paro la fotos de los lados de la tarjeta*/
+    box-sizing: border-box;/*controla el espacio de las tarjetas*/
+   
+    border: 2px solid #000000;/*ancho del borde,estilo del borde de las targetas,color del borde*/
+    border-radius: 10px;/*bordes de las tarjetas*/
+    margin: 40px 40px;
+    height: 400px;/*defino el tamaño de alto de la tarjeta*/
+    border-radius: 10px;
+}
+
+
+
+/*encabezado estudiantes*/
+.container-fotos h2{
+    font-size: 30px;
+    font-weight: bold;
+   
+    
+}
+
+.container-fotos li:hover h2{
+    font-size: 40px;
+   
+}
+
+/*se altera la fuente del nombre de los ingenieros*/
+.nombre-ingeniero{
+    font-size: 25px;
+   
+}
+
+
+
+
+/*se altera la fuente del correo de los ingenieros*/
+.fotos-ingenieros .facultad{
+    /*width: 256px;*/
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+   
+    
+}
+
+
+/*..........................section video.............*/
+
+.video {
+    width: 690px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*....................*/
+.gif{
+    display: flex;/*solo se coloca en los contenedores padres*/
+    justify-content: space-between;/*solo se coloca en los contenedores padres*/
+    width: 694px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/*..............section mapa..................*/
+
+.mapa{
+    
+    padding: 3em 0;
+   
+}
+
+.mapa p{
+    width: 693px;
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 714px;
+    margin: 0 auto;
+}
+
+
+/*............section gracias.....................*/
+.imagen-gracias{
+    width: 690px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*.................imagen con movimiento............*/
+.imagen-gracias img{
+    width: 10%;
+    position: absolute; left: 0px; animation: move 15s infinite; 
+     
+     
+}
+@keyframes move { 0% { left: 0; } 100% { left: 89%; } }

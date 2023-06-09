@@ -1,0 +1,310 @@
+/*se guardan los colores que se van a utlizar*/
+:root{
+    --color: #000000; 
+    --color: #c78c19; 
+    --border-color:#088c19;
+    --background: linear-gradient(#FEFEFE, #88888888);
+    --off-white:#daf8f7;
+    --just-white: #bbbb;
+        
+}
+
+/*elimino las configuraciones predeterminas*/
+*{
+    box-sizing: border-box;
+    margin: 2;
+    padding: 0;
+    
+}
+
+/*inicialimos la fuente y font-size*/
+html {
+    font: 62.5%;
+    font-size: 'DM Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;/*en la pantalla del celular no se achica mas*/
+    height: 405px;
+    text-align: center;
+    margin-top: -99px;
+    background-color: #cccccc;
+    
+}
+
+
+.header--title-container h1 {
+    margin-top: 10px;
+   
+    align-self: center;/*de esta forma se centra un elemento cuando el contenedor tiene flex*/
+}
+
+.header--title-container {
+    
+    min-width: 288px;/*el texto no se hace mas pequeño en el celular*/
+
+    /*max-width: 900px;/*el texto no se hace mas grande el computador*/
+
+    height: 218px;/*tamaño del contenedor*/
+    margin-top: 20px;
+   
+    align-self: center;/*asi centra en elemento cuando el contenedor tiene display flex*/
+}
+
+
+/*...........................ELECTROMAGNETISMO Y FISICA ll.................*/
+.header--title-container h2{
+    
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;/*la primera letra en mayuscula*/
+   
+}
+
+
+/*...............................Ingenieria de sistemas.....................*/
+.header--title-container p{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1rem;
+    
+}
+
+.titulo-principal {
+    font-size: 1.1rem;
+    margin-top: 23px;
+    text-align: center;
+}
+
+
+nav a{
+    
+    text-transform: uppercase;/*coloca mayusculas */
+    color: #000000;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/*elimina los puntos de lista de navegacion del header*/
+ul {
+    list-style: none;
+}
+
+
+
+
+/*capturar el movimiento del mouse para cambiar de color el inicio,productos,contactos*/
+nav a:hover{
+    color: blue;
+    text-decoration: underline;/*el mouse al estar encima de las barras de navegacion le coloca una linea de botton*/
+}
+
+
+/*..................section bienvenida.................*/
+.bloque-Bienvenida{
+    
+    color: var(--#bbbb);
+    min-width: 288px;
+    max-width: 400px;
+    margin: 0 auto;
+    
+
+}
+
+.bloque-Bienvenida img{
+
+    width: 30%;
+    float: left;
+    margin: 0 20px 20px 0;
+    object-fit: cover;/*la imagen va mantener su tamaño*/
+}
+
+.titulo-principal{
+    color: red;
+    text-transform: uppercase;/*todo el texto en mayuscula*/
+}
+
+.bloque-Bienvenida p{
+    min-width: 288px;
+    max-width: 400px;
+    margin: 0 0 2rem;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+
+/*..............................section de fotos principales*/
+.main{
+    text-align: center;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+
+
+/*fotos de brusly y juan*/
+
+.fotos-ingenieros img{
+    width: 30%;
+    object-fit: cover;/*la imagen va mantener su tamaño*/
+   
+}
+
+.fotos .foto-brusly{
+    width: 60px;
+   
+    
+}
+
+/*letra de en cabezado de las imagenes*/
+.fotos-ingenieros h2 {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+
+.container-fotos li{
+    
+    width: 30%;
+    min-width: 288px;/*las fotos no se a chican mas*/
+    max-width: 400px;/*las fotos no se agrandan mas*/
+    height: 160px;
+    padding: 4px 20px;/*espacio interno de las tarjetas*/
+    box-sizing: border-box;/*se ajusta al 30% del width para no sobrepasar la pantalla*/
+    border: 2px solid #000000;/*ancho del borde,estilo del borde de las targetas,color del borde*/
+    border-radius: 10px;/*bordes de las tarjetas*/
+    margin: 40px auto;
+    margin-top: 10px;
+  
+}
+
+
+/*el border de la fotos  de los ingenieros cambia de color*/
+.container-fotos li:hover {
+    border-color: blue;
+    
+    
+}
+
+.container-fotos li:hover h2{
+    font-size: 26px;
+   
+}
+
+.container-fotos li:active{
+    border-color: red;
+    
+}
+
+
+.fotos-ingenieros li h2 {
+   
+    margin-top: 0px;
+   
+}
+
+.nombre-ingeniero{
+    font-size: 18px;
+    margin-top: 10px;
+   
+}
+
+
+/*......................section del correo.....................*/
+.fotos-ingenieros .facultad{
+    
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    
+    
+}
+
+/*section del correo parrafo*/
+
+.fotos-ingenieros .facultad p{
+   
+    max-width: 400px;/*tamaño de la caja*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+   
+} 
+
+
+/*.........section video..........*/
+.video{
+    width: 288px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*.....................mapa.............................*/
+
+.mapa-contenido{
+    width: 288px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.mapa p{
+    width: 288px;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;/*la primera letra en mayuscula*/
+   
+
+}
+
+
+/*.................imagen con movimiento............*/
+
+
+.imagen-gracias{
+    min-width: 288px;
+    max-width: 690px;
+    height: 212px;
+    background-size: cover;
+    margin: 0 auto;
+    
+}
+
+/*.................imagen con movimiento............*/
+.imagen-gracias img{
+    width: 30%;
+    position: absolute; left: 0px; animation: move 15s infinite; 
+    object-fit: cover;/*la imagen va mantener su tamaño*/
+     
+     
+}
+@keyframes move { 0% { left: 0; } 100% { left: 67%; } }
+
+
+/*...........................footer..................*/
+footer{
+    text-align: center;/*centro el logo del footer*/
+    background-color: #cccccc;
+    /*background: url(/imgs/cabello.jpg);*//*ejemplo de como colocar una foto en footer*/
+}
+
+/*logo del footer*/
+footer img{
+    width: 20%;/*tamaño del logo*/
+    padding: 15px;/*separo el logo de la parte de arriba del footer*/
+    object-fit: cover;/*la imagen va mantener su tamaño*/
+}
